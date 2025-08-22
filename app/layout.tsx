@@ -22,8 +22,20 @@ export const metadata: Metadata = {
   description:
     "Smart parenting assistant that decodes cries, tracks routines, and provides personalized care tips. Parent smarter, not harder.",
   icons: {
-    icon: '/logo/favicon.ico'
-  }
+    icon: [
+      { url: '/logo/favicon.ico', type: 'image/x-icon' },
+      { url: '/logo/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/logo/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/logo/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'android-chrome', url: '/logo/android-chrome-192x192.png', sizes: '192x192' },
+      { rel: 'android-chrome', url: '/logo/android-chrome-512x512.png', sizes: '512x512' },
+    ],
+  },
+  manifest: '/logo/site.webmanifest',
 }
 
 export default function RootLayout({
